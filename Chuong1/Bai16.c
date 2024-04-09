@@ -1,6 +1,6 @@
 //
 // Created by huydo on 4/9/2024.
-//Bài 14: Tính S(n) = x + x^3 + x^5 + … + x^2n + 1
+//Bài 16: Tính S(n) = x + x^2/1 + 2 + x^3/1 + 2 + 3 + … + x^n/1 + 2 + 3 + …. + N
 #include <stdio.h>
 
 int main() {
@@ -9,12 +9,12 @@ int main() {
     scanf("%d", &x);
     printf("Nhap so N: ");
     scanf("%d", &n);
-    int i=0;
+    int i=1;
     int sum=0;
-    int T=x;
+    int T=0;
     do {
-        sum = sum + T;
-        T = T*x*x;
+        T = T + i;
+
         i++;
     } while (i<=n);
     printf("Tong S(n) la: %d", sum);
