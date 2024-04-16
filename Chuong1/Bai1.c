@@ -13,6 +13,7 @@ int main() {
         sum = sum + i;
         i++;
     } while (i<=n);
+
     printf("Tong S(n) la: %d", sum);
     return 0;
 }
